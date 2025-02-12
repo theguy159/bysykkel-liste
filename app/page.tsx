@@ -5,8 +5,8 @@ import { StationStatus, StationInformation } from 'gbfs-typescript-types/v2.3';
 import mockStationStatus from '@/lib/mock_station_status.json';
 import mockStationInformation from '@/lib/mock_station_information.json';
 
-const stationStatusData: StationStatus = mockStationStatus;
-const stationInformationData: StationInformation = mockStationInformation;
+const stationStatusData = mockStationStatus as StationStatus;
+const stationInformationData = mockStationInformation as StationInformation;
 
 
 
