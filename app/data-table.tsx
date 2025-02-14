@@ -61,7 +61,7 @@ export function DataTable<TData, TValue>({
           onChange={(event) =>
             table.getColumn("name")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="max-w-[286px]"
         />
       </div>
 
@@ -72,7 +72,7 @@ export function DataTable<TData, TValue>({
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
                   return (
-                    <TableHead key={header.id}>
+                    <TableHead key={header.id} style={{ minWidth: header.column.columnDef.size, maxWidth: header.column.columnDef.size }}>
                       {header.isPlaceholder
                         ? null
                         : flexRender(

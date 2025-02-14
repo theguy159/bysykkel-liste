@@ -43,10 +43,11 @@ export default async function Home() {
 
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
+      <div className="absolute top-4 right-4"><ModeToggle /></div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">Bysykkel liste</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <ModeToggle />
           <div className="mb-2">
             <DataTable columns={columns} data={data} />
           </div>
