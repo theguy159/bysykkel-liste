@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, Grid2x2, Bike, MapPin, LockOpen } from "lucide-react";
@@ -8,9 +8,7 @@ export type StationRow = {
   num_docks_available: number;
   num_bikes_available: number;
   capacity: number;
-}
-
-
+};
 
 export const columns: ColumnDef<StationRow>[] = [
   {
@@ -27,8 +25,8 @@ export const columns: ColumnDef<StationRow>[] = [
           Sykkelstativ
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
-      )
-    }
+      );
+    },
   },
   {
     accessorKey: "num_docks_available",
@@ -44,8 +42,8 @@ export const columns: ColumnDef<StationRow>[] = [
           Ledige låser
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
-      )
-    }
+      );
+    },
   },
   {
     accessorKey: "num_bikes_available",
@@ -61,8 +59,8 @@ export const columns: ColumnDef<StationRow>[] = [
           Ledige sykler
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
-      )
-    }
+      );
+    },
   },
   {
     accessorKey: "capacity",
@@ -78,8 +76,7 @@ export const columns: ColumnDef<StationRow>[] = [
           Kapasitet
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
-      )
-    }
-  }
-]
-
+      );
+    },
+  },
+];
