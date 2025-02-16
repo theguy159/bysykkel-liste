@@ -3,8 +3,8 @@ import { StationStatus, StationInformation } from "gbfs-typescript-types/v2.3";
 import { StationRow, columns } from "./columns";
 
 import { config } from "@/config";
-import { DataTable } from "./data-table";
-import { ModeToggle } from "@/components/ModeToggle";
+import { DataTable } from "@/components/data-table";
+import { ModeToggle } from "@/components/mode-toggle";
 const status_url = config.API_URL_BASE + "station_status.json";
 const info_url = config.API_URL_BASE + "station_information.json";
 
